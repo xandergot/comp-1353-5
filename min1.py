@@ -1,3 +1,4 @@
+import random
 def min1(input_list: list[int])->int:
     min = input_list[0]  
     for value in input_list:
@@ -16,3 +17,9 @@ def min2(input_list: list[int])->int:
                 input_list[j - 1] = input_list[j]
                 input_list[j] = temp
     return input_list[0]
+
+def main():
+    list = [random.random() for i in range 5000]
+    for i in range 20:
+        min1(list)
+        
